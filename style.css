@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Cabin&family=Kanit:wght@400&family=Mukta&display=swap');
+html, body {
+  height:100%;
+  width: 100%;  
+  scroll-behavior: smooth;
+}
+body{
+  overflow-x:hidden;
+}
+*{
+  margin:0;
+  padding:0;
+  
+}
+.hov:hover{
+  border-bottom:1px solid white;
+}
+main{
+  height:calc(100vh - 60px);
+  width:100%;
+   background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('images/pexels-saya-kimura-401107.jpg');
+  background-size:cover;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+main .intro{
+  font-family: 'Mukta', sans-serif;
+  color:white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.intro img{
+  height:180px;
+  width:180px;
+}
+.intro h1{
+  font-size:50px;
+}
+.intro h2{
+  font-size:25px;
+  font-weight: lighter;
+}
+.buttons{
+  margin-top:13px;
+  display:flex;
+}
+.buttons button{
+    background: none;
+    border: 3px solid white;
+    border-radius: 30px;
+    color: white;
+    font-family: Mukta;
+    margin: 10px;
+    font-size: 20px;
+    padding: 4px 40px;
+}
+.buttons button:hover{
+  background:white;
+  cursor: pointer;
+  color:black;
+  border: 3px solid #806a42;
+}
+
+.buttons a{
+  text-decoration:none;
+  color:white;
+}
+.aboutme{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:13px;
+  text-align:center
+}
+.aboutme h1{
+  font-family:'Lato',sans-serif;
+  letter-spacing: 0.5px;
+}
+.aboutme p{
+  font-family: Lato;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+  width:90%;
+}
+
+.projects{  
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  font-family: 'Lato', sans-serif;
+  width:100%;
+}
+.projects h1{
+  margin:15px;
+  font-size: 37px;
+  color:#302c2c;
+}
+.projects article{
+  width:60vw;
+  letter-spacing: 0.8px;
+  font-size: 17px;
+  margin-top: 13px;
+}
+.project_cards{
+  width:70vw;
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+.project_cards .box{    
+  flex-direction: column;
+    border: 1px solid #eecfbf;
+    height: 400px;
+    margin: 9px 5px;
+    display: flex;
+    align-items: center;
+   position: relative;    
+   opacity: 0;
+   transform: translateX(-100px);
+}
+.box img{
+  border-radius: 50%;
+  margin-top: 15px;
+  width: 80px;
+  height:80px;
+  transition: all .2s ease-in-out; 
+}
+.box img:hover{
+   transform: scale(1.25);
+   cursor:pointer;
+}
+.box h2{
+  margin:10px 0;
+  font-size:25px;
+}
+.box p{
+  margin:0px 6px 20px 6px;
+  text-align: justify;
+}
+.box button{
+  font-size: 18px;
+    padding: 9px;
+    background: none;
+    font-family: monospace;
+    position: absolute;
+    bottom: 5px;
+}
+.box button:hover{
+  background:black;
+  color:white;
+  cursor: pointer;
+}
+footer{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(90deg, rgb(163 160 235) 4%, rgb(201, 238, 237) 27%, rgb(196 144 203) 94%);
+  height:18vh;
+  flex-direction:column;
+}
+footer .imgs{
+  margin:10px 0;
+}
+footer .imgs svg{
+margin:0 10px;
+}
+footer .imgs svg:hover{
+   transform: scale(1.25);
+  transition:all 0.2s ease-in;
+}
+@media only screen and (max-width: 600px) {
+.aboutme p{
+  text-align:justify;
+}
+.projects article{
+  width:90vw;
+  text-align: justify;
+}
+  .project_cards{
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  .intro h1 {
+    font-size: 37px;
+}
+  .intro h2 {
+    font-size: 23px;
+}
+
+.projects h1{
+  font-size:25px;
+}
+footer {
+  height:20vh;
+}
+footer h1{
+  font-size:27px;
+}
+.buttons a button {
+  font-size:15px;
+}
+}
+.active{
+  opacity:1 !important;
+  transform: translateX(0) !important;
+  transition: all 0.5s ease-in !important;  
+}
