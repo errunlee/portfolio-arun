@@ -41,6 +41,12 @@ window.open(
   '_blank' 
 );
 })
+weather.addEventListener('click',()=>{
+window.open(
+  'https://errunlee.github.io/Weather-App-v2/',
+  '_blank' 
+);
+})
 let reveals = document.querySelectorAll('.reveal')
 window.addEventListener('scroll', () => {
   for (let i = 0; i < reveals.length; i++) {
