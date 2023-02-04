@@ -47,6 +47,12 @@ window.open(
   '_blank' 
 );
 })
+notebook.addEventListener('click',()=>{
+window.open(
+  'https://notebookbyerrun.netlify.app/',
+  '_blank' 
+);
+})
 let reveals = document.querySelectorAll('.reveal')
 window.addEventListener('scroll', () => {
   for (let i = 0; i < reveals.length; i++) {
