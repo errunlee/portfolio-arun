@@ -29,15 +29,15 @@ window.open(
   '_blank' 
 );
 })
-hangman.addEventListener('click',()=>{
+restcountries.addEventListener('click',()=>{
 window.open(
-  'https://hangman-try2completed.aarun-khatri.repl.co',
+  'https://frontend-mentor-rest-countries-api-with-color-theme-switcher-nu.vercel.app/',
   '_blank' 
 );
 })
-calculator.addEventListener('click',()=>{
+linkshortener.addEventListener('click',()=>{
 window.open(
-  'https://calculator-final.aarun-khatri.repl.co',
+  'https://linkshortbyarun.vercel.app/',
   '_blank' 
 );
 })
