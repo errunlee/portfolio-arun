@@ -48,19 +48,50 @@
       About Me
     </h1>
     <hr style='width:10%;color:black'>
-    <p>Hello there, I am Arun Khatri currently studying Bachelor's in Computer Application at Samriddhi College.</p>
-  </article>
-  
+    <p>Hello there, I am Arun Khatri currently studying Bachelor's in Computer Application at Samriddhi College. And I love creating cool websites.</p>
+</article>
+  <section class="d-flex flex-column justify-content-center my-3">
+    <div class="d-flex justify-content-center flex-column align-items-center mb-3">
+      <h2 style="font-size:29px;font-family:Lato;letter-spacing:0.4px;text-align:center" class="font-weight-bolder">Languages and Tools that I Work On</h2>
+      <hr style='width:10%;color:black'>
+    </div>
+    <div class=" skills d-flex justify-content-center">
+      <img src="./images/skills/html5-original.svg" title="HTML5" alt="HTML" width="80" height="80"/>&nbsp;
+      <img src="./images/skills/css3-original.svg"  title="CSS3" alt="CSS" width="80" height="80"/>&nbsp;
+      <img src="./images/skills/javascript-original.svg" title="JavaScript" alt="JavaScript" width="80" height="80"/>
+      <img src="./images/skills/react-original.svg" title="React" alt="React" width="80" height="80"/>&nbsp;
+      <img src="./images/skills/nodejs-plain.svg" title="NodeJS" alt="NodeJS" width="80" height="80"/>&nbsp;
+      <img src="./images/skills/git-original.svg" title="Git" **alt="Git" width="80" height="80"/>
+    </div>
+  </section>
   <section class='projects' id='projects'>
     <h1>MY APPS AND PROJECTS</h1>
     <hr style='width:100px;color:purple'>
     <article>These are some applications and projects that I've worked on. I've mainly used HTML, CSS  and vanilla JavaScript for these projects. Feel free to check them out below and find the source codes in my github.</article>
     <div class='project_cards'>
       <div class='box reveal'>
-        <img src='images/notebook.png' alt='note image'>
+        <img src='images/notebook.jpg' alt='note image'>
         <h2>iNotebook</h2>
         <p>This is a webapp where you can store your notes privately. All notes are kept private. You can create an account and store your notes in it safely.</p>
         <button id='notebook'>Check this out</button>
+      </div>
+      <div class='box reveal'>
+        <img src='images/git.png' alt='githubuser image'>
+        <h2>Search Github</h2>
+        <p>Used github api to create this webapp to search and find github user details. Also used auth0 for authentication  fusionchart.io for displaying the user details through different charts. </p>
+        <button id='searchgithub'><a href='https://searchgithubbyarun.vercel.app/' target="_blank" class="text-decoration-none text-dark">Check this out</a></button>
+      </div>
+      <div class='box reveal'>
+        <img src='images/ecom.png'>
+        <h2>E-Commerce</h2>
+        <p>Ecommerce Website created using React and fakestoreAPI. It has  features like viewing product lists, details of a product and checkout feature as well.</p>
+        <button id='tictactoe'>Check this out</button>
+      </div>
+      <div class='box reveal'>
+        <img src='images/muvi.jpg' alt='movieapp'>
+        <h2>Movie WebApp</h2>
+        <p>A movie wesbite created by using React and TMDB api. It has features of searching, browsing various categories and getting individual movie details.</p>
+        <button id='movie'>Check this out</button>
       </div>
         <div class='box reveal'>
         <img src='images/weatherpic.png' alt='weather image'>
@@ -74,23 +105,12 @@
         <p>I used rest countries API to view details about all the countries in the world.</p>
         <button id='restcountries'>Check this out</button>
       </div>
-      <div class='box reveal'>
-        <img src='images/music.jpg' alt='music player image'>
-        <h2>Music Player App</h2>
-        <p>A simple music player app made using HTML, vanilla CSS and vanilla JavaScript. I have added some musics that you can play, pause, rewind, forward like in any other music player app.</p>
-        <button id='music'>Check this out</button>
-      </div>
+     
       <div class='box reveal'>
         <img src='images/linkshort.png'>
         <h2>Link Shortener</h2>
-        <p>This is a link shortening webapp that is made use shorcode API.</p>
+        <p>This is a link shortening webapp that is made using shorcode API.</p>
         <button id='linkshortener'>Check this out</button>
-      </div>
-      <div class='box reveal'>
-        <img src='images/javascript-tic-tac-toe-tutorial-react.png'>
-        <h2>Tic Tac Toe</h2>
-        <p>This is a game in which two players seek in alternate turns to complete a row, a column, or a diagonal with either three O's or three X's drawn in the spaces of a grid of nine squares; noughts and crosses.</p>
-        <button id='tictactoe'>Check this out</button>
       </div>
      
   </section>

@@ -19,13 +19,13 @@ window.addEventListener("scroll",()=>{
 })
 tictactoe.addEventListener('click',()=>{
 window.open(
-  'https://tic-tac-toe-multiplayer.aarun-khatri.repl.co/',
+  'https://nestnepal-frontend-ecommerce.vercel.app/',
   '_blank' 
 );
 })
-music.addEventListener('click',()=>{
+movie.addEventListener('click',()=>{
 window.open(
-  'https://Music-Player.aarun-khatri.repl.co',
+  'https://moobiedoobie.vercel.app/',
   '_blank' 
 );
 })
