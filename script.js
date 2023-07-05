@@ -17,12 +17,7 @@ window.addEventListener("scroll",()=>{
   let offset=window.pageYOffset;
   parallex.style.backgroundPositionY=offset*0.7+'px';
 })
-tictactoe.addEventListener('click',()=>{
-window.open(
-  'https://nestnepal-frontend-ecommerce.vercel.app/',
-  '_blank' 
-);
-})
+
 movie.addEventListener('click',()=>{
 window.open(
   'https://moobiedoobie.vercel.app/',
