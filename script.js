@@ -24,6 +24,12 @@ window.open(
   '_blank' 
 );
 })
+chatapp.addEventListener('click',()=>{
+window.open(
+  'https://kuragaram.vercel.app/',
+  '_blank' 
+);
+})
 restcountries.addEventListener('click',()=>{
 window.open(
   'https://frontend-mentor-rest-countries-api-with-color-theme-switcher-nu.vercel.app/',
